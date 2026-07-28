@@ -1,0 +1,28 @@
+# Raw/public input data
+GSE268349_RAW.tar
+gencode.v35.annotation.gtf.gz
+geo_rnaseq_quant/
+supplementary_data_1_8.xlsx
+
+# Large generated full result matrices
+results/*_all_transcripts.csv
+results/transcript_isoform_uv_vs_control_all.csv
+
+# Python/cache files
+__pycache__/
+*.pyc
+
+# Local presentation build and render files
+.presentation-build/
+*.pptx.inspect.ndjson
+/UV_isoform_analysis_presentation/
+/UV_isoform_analysis_presentation.pptx
+/UV_isoform_analysis_presentation_EN/
+/UV_isoform_analysis_presentation_EN.pptx
+
+# Locally installed third-party tools and SUPPA2 intermediate matrices
+.tools/
+results/suppa2_work/
+
+# macOS metadata
+.DS_Store

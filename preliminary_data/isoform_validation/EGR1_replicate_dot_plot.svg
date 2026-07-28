@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="267" viewBox="0 0 980 267" role="img" aria-labelledby="title desc">
+<title id="title">EGR1 replicate-level isoform TPM</title>
+<desc id="desc">Dots show replicate TPM values; line connects condition means on log2 TPM scale.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>
+text { font-family: Arial, Helvetica, sans-serif; fill: #222; }
+.axis { stroke: #555; stroke-width: 1; }
+.grid { stroke: #dddddd; stroke-width: 1; }
+.mean { stroke: #222222; stroke-width: 1.8; fill: none; }
+.dot { fill: #2f6f9f; opacity: 0.78; }
+</style>
+<text x="490" y="30" text-anchor="middle" font-size="20" font-weight="700">EGR1 replicate-level isoform TPM</text>
+<text x="490" y="54" text-anchor="middle" font-size="12">y-axis is log2(TPM + 0.1); dots are individual replicates, line is condition mean</text>
+<text x="18" y="102" font-size="12">EGR1-201 | protein_coding</text>
+<text x="18" y="122" font-size="11">ENST00000239938.5</text>
+<line x1="220" y1="177.0" x2="900" y2="177.0" class="grid"/>
+<line x1="220" y1="129.5" x2="900" y2="129.5" class="grid"/>
+<line x1="220" y1="82.0" x2="900" y2="82.0" class="grid"/>
+<line x1="220" y1="177" x2="900" y2="177" class="axis"/>
+<line x1="220" y1="82" x2="220" y2="177" class="axis"/>
+<circle cx="210.0" cy="157.4" r="4" class="dot"/>
+<circle cx="220.0" cy="154.6" r="4" class="dot"/>
+<circle cx="230.0" cy="158.0" r="4" class="dot"/>
+<text x="220.0" y="197" text-anchor="middle" font-size="11">control</text>
+<text x="220.0" y="148.6" text-anchor="middle" font-size="10">0.46</text>
+<circle cx="436.7" cy="154.1" r="4" class="dot"/>
+<circle cx="446.7" cy="132.4" r="4" class="dot"/>
+<circle cx="456.7" cy="142.7" r="4" class="dot"/>
+<text x="446.66666666666663" y="197" text-anchor="middle" font-size="11">12m</text>
+<text x="446.66666666666663" y="132.0" text-anchor="middle" font-size="10">2.14</text>
+<circle cx="663.3" cy="96.5" r="4" class="dot"/>
+<circle cx="673.3" cy="94.5" r="4" class="dot"/>
+<circle cx="683.3" cy="96.9" r="4" class="dot"/>
+<text x="673.3333333333333" y="197" text-anchor="middle" font-size="11">30m</text>
+<text x="673.3333333333333" y="87.9" text-anchor="middle" font-size="10">90.96</text>
+<circle cx="890.0" cy="82.0" r="4" class="dot"/>
+<circle cx="900.0" cy="85.1" r="4" class="dot"/>
+<circle cx="910.0" cy="82.7" r="4" class="dot"/>
+<text x="900.0" y="197" text-anchor="middle" font-size="11">60m</text>
+<text x="900.0" y="75.2" text-anchor="middle" font-size="10">265.60</text>
+<polyline points="220.0,156.6 446.7,140.0 673.3,95.9 900.0,83.2" class="mean"/>
+</svg>

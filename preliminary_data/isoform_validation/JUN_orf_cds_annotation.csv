@@ -1,0 +1,2 @@
+gene_name,gene_id,transcript_id,transcript_name,transcript_type,protein_id,cds_bp,cds_segments,protein_length_aa_est,max_mean_TPM,mean_TPM_0,mean_TPM_12,mean_TPM_30,mean_TPM_60
+JUN,ENSG00000177606.7,ENST00000371222.4,JUN-201,protein_coding,ENSP00000360266.2,993.0,1.0,331.0,245.51461733333335,1.0792266666666668,2.1563026666666665,88.39170066666667,245.51461733333335

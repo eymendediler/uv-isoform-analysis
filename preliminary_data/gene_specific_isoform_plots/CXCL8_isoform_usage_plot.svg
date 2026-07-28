@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="640" viewBox="0 0 980 640" role="img" aria-labelledby="title desc">
+<title id="title">CXCL8 isoform usage and expression across UV time course</title>
+<desc id="desc">Stacked bars show transcript isoform usage fractions; line shows total gene TPM.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>
+text { font-family: Arial, Helvetica, sans-serif; fill: #222; }
+.axis { stroke: #555; stroke-width: 1; }
+.grid { stroke: #dddddd; stroke-width: 1; }
+</style>
+<text x="490" y="32" text-anchor="middle" font-size="20" font-weight="700">CXCL8 isoform usage and expression across UV time course</text>
+<text x="80" y="62" font-size="13">Isoform usage fraction inside gene</text>
+<text x="500" y="62" font-size="13">Total gene expression</text>
+<line x1="80" y1="412.0" x2="380" y2="412.0" class="grid"/>
+<text x="72" y="416.0" text-anchor="end" font-size="11">0</text>
+<line x1="80" y1="329.5" x2="380" y2="329.5" class="grid"/>
+<text x="72" y="333.5" text-anchor="end" font-size="11">0.25</text>
+<line x1="80" y1="247.0" x2="380" y2="247.0" class="grid"/>
+<text x="72" y="251.0" text-anchor="end" font-size="11">0.5</text>
+<line x1="80" y1="164.5" x2="380" y2="164.5" class="grid"/>
+<text x="72" y="168.5" text-anchor="end" font-size="11">0.75</text>
+<line x1="80" y1="82.0" x2="380" y2="82.0" class="grid"/>
+<text x="72" y="86.0" text-anchor="end" font-size="11">1</text>
+<line x1="80" y1="82" x2="80" y2="412" class="axis"/>
+<line x1="80" y1="412" x2="380" y2="412" class="axis"/>
+<rect x="98.0" y="412.0" width="42" height="0.0" fill="#4f7f60"/>
+<rect x="98.0" y="82.0" width="42" height="330.0" fill="#b8792e"/>
+<rect x="98.0" y="82.0" width="42" height="0.0" fill="#2f6f9f"/>
+<text x="119.0" y="434" text-anchor="middle" font-size="12">control</text>
+<rect x="173.0" y="412.0" width="42" height="0.0" fill="#4f7f60"/>
+<rect x="173.0" y="412.0" width="42" height="0.0" fill="#b8792e"/>
+<rect x="173.0" y="412.0" width="42" height="0.0" fill="#2f6f9f"/>
+<text x="194.0" y="434" text-anchor="middle" font-size="12">12m UV</text>
+<rect x="248.0" y="82.0" width="42" height="330.0" fill="#4f7f60"/>
+<rect x="248.0" y="82.0" width="42" height="0.0" fill="#b8792e"/>
+<rect x="248.0" y="82.0" width="42" height="0.0" fill="#2f6f9f"/>
+<text x="269.0" y="434" text-anchor="middle" font-size="12">30m UV</text>
+<rect x="323.0" y="154.7" width="42" height="257.3" fill="#4f7f60"/>
+<rect x="323.0" y="107.0" width="42" height="47.7" fill="#b8792e"/>
+<rect x="323.0" y="82.0" width="42" height="25.0" fill="#2f6f9f"/>
+<text x="344.0" y="434" text-anchor="middle" font-size="12">60m UV</text>
+<rect x="80" y="440" width="12" height="12" fill="#4f7f60"/>
+<text x="100" y="450" font-size="12">CXCL8-201 (protein_coding)</text>
+<rect x="80" y="464" width="12" height="12" fill="#b8792e"/>
+<text x="100" y="474" font-size="12">CXCL8-203 (retained_intron)</text>
+<rect x="80" y="488" width="12" height="12" fill="#2f6f9f"/>
+<text x="100" y="498" font-size="12">Other expressed isoforms (mixed)</text>
+<line x1="500" y1="302.0" x2="880" y2="302.0" class="grid"/>
+<text x="492" y="306.0" text-anchor="end" font-size="11">0.0</text>
+<line x1="500" y1="192.0" x2="880" y2="192.0" class="grid"/>
+<text x="492" y="196.0" text-anchor="end" font-size="11">1.1</text>
+<line x1="500" y1="82.0" x2="880" y2="82.0" class="grid"/>
+<text x="492" y="86.0" text-anchor="end" font-size="11">2.1</text>
+<line x1="500" y1="82" x2="500" y2="302" class="axis"/>
+<line x1="500" y1="302" x2="880" y2="302" class="axis"/>
+<polyline points="500.0,294.8 626.7,302.0 753.3,288.8 880.0,82.0" fill="none" stroke="#222222" stroke-width="2"/>
+<circle cx="500.0" cy="294.8" r="4" fill="#222222"/>
+<text x="500.0" y="284.8" text-anchor="middle" font-size="11">0.1</text>
+<text x="500.0" y="324" text-anchor="middle" font-size="12">control</text>
+<circle cx="626.7" cy="302.0" r="4" fill="#222222"/>
+<text x="626.7" y="292.0" text-anchor="middle" font-size="11">0.0</text>
+<text x="626.7" y="324" text-anchor="middle" font-size="12">12m UV</text>
+<circle cx="753.3" cy="288.8" r="4" fill="#222222"/>
+<text x="753.3" y="278.8" text-anchor="middle" font-size="11">0.1</text>
+<text x="753.3" y="324" text-anchor="middle" font-size="12">30m UV</text>
+<circle cx="880.0" cy="82.0" r="4" fill="#222222"/>
+<text x="880.0" y="72.0" text-anchor="middle" font-size="11">2.1</text>
+<text x="880.0" y="324" text-anchor="middle" font-size="12">60m UV</text>
+<text x="500" y="350" font-size="13">Mean TPM by isoform</text>
+<text x="500" y="374" font-size="11">isoform</text>
+<text x="690" y="374" font-size="11">control</text>
+<text x="752" y="374" font-size="11">12m UV</text>
+<text x="814" y="374" font-size="11">30m UV</text>
+<text x="876" y="374" font-size="11">60m UV</text>
+<text x="500" y="396" font-size="11">CXCL8-201</text>
+<text x="690" y="396" font-size="11">0.00</text>
+<text x="752" y="396" font-size="11">0.00</text>
+<text x="814" y="396" font-size="11">0.13</text>
+<text x="876" y="396" font-size="11">1.64</text>
+<text x="500" y="418" font-size="11">CXCL8-203</text>
+<text x="690" y="418" font-size="11">0.07</text>
+<text x="752" y="418" font-size="11">0.00</text>
+<text x="814" y="418" font-size="11">0.00</text>
+<text x="876" y="418" font-size="11">0.30</text>
+<text x="500" y="440" font-size="11">Other expressed isoforms</text>
+<text x="690" y="440" font-size="11">0.00</text>
+<text x="752" y="440" font-size="11">0.00</text>
+<text x="814" y="440" font-size="11">0.00</text>
+<text x="876" y="440" font-size="11">0.16</text>
+</svg>

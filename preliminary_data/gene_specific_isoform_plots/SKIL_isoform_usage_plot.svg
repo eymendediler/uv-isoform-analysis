@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="640" viewBox="0 0 980 640" role="img" aria-labelledby="title desc">
+<title id="title">SKIL isoform usage and expression across UV time course</title>
+<desc id="desc">Stacked bars show transcript isoform usage fractions; line shows total gene TPM.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>
+text { font-family: Arial, Helvetica, sans-serif; fill: #222; }
+.axis { stroke: #555; stroke-width: 1; }
+.grid { stroke: #dddddd; stroke-width: 1; }
+</style>
+<text x="490" y="32" text-anchor="middle" font-size="20" font-weight="700">SKIL isoform usage and expression across UV time course</text>
+<text x="80" y="62" font-size="13">Isoform usage fraction inside gene</text>
+<text x="500" y="62" font-size="13">Total gene expression</text>
+<line x1="80" y1="412.0" x2="380" y2="412.0" class="grid"/>
+<text x="72" y="416.0" text-anchor="end" font-size="11">0</text>
+<line x1="80" y1="329.5" x2="380" y2="329.5" class="grid"/>
+<text x="72" y="333.5" text-anchor="end" font-size="11">0.25</text>
+<line x1="80" y1="247.0" x2="380" y2="247.0" class="grid"/>
+<text x="72" y="251.0" text-anchor="end" font-size="11">0.5</text>
+<line x1="80" y1="164.5" x2="380" y2="164.5" class="grid"/>
+<text x="72" y="168.5" text-anchor="end" font-size="11">0.75</text>
+<line x1="80" y1="82.0" x2="380" y2="82.0" class="grid"/>
+<text x="72" y="86.0" text-anchor="end" font-size="11">1</text>
+<line x1="80" y1="82" x2="80" y2="412" class="axis"/>
+<line x1="80" y1="412" x2="380" y2="412" class="axis"/>
+<rect x="98.0" y="176.0" width="42" height="236.0" fill="#4f7f60"/>
+<rect x="98.0" y="146.1" width="42" height="29.9" fill="#b8792e"/>
+<rect x="98.0" y="137.7" width="42" height="8.3" fill="#2f6f9f"/>
+<rect x="98.0" y="118.5" width="42" height="19.3" fill="#b83a4b"/>
+<rect x="98.0" y="105.7" width="42" height="12.8" fill="#6f5fa8"/>
+<rect x="98.0" y="82.0" width="42" height="23.7" fill="#7f6d4f"/>
+<text x="119.0" y="434" text-anchor="middle" font-size="12">control</text>
+<rect x="173.0" y="263.3" width="42" height="148.7" fill="#4f7f60"/>
+<rect x="173.0" y="178.1" width="42" height="85.2" fill="#b8792e"/>
+<rect x="173.0" y="168.5" width="42" height="9.6" fill="#2f6f9f"/>
+<rect x="173.0" y="121.8" width="42" height="46.7" fill="#b83a4b"/>
+<rect x="173.0" y="104.2" width="42" height="17.6" fill="#6f5fa8"/>
+<rect x="173.0" y="82.0" width="42" height="22.2" fill="#7f6d4f"/>
+<text x="194.0" y="434" text-anchor="middle" font-size="12">12m UV</text>
+<rect x="248.0" y="333.4" width="42" height="78.6" fill="#4f7f60"/>
+<rect x="248.0" y="225.8" width="42" height="107.6" fill="#b8792e"/>
+<rect x="248.0" y="187.2" width="42" height="38.5" fill="#2f6f9f"/>
+<rect x="248.0" y="142.6" width="42" height="44.6" fill="#b83a4b"/>
+<rect x="248.0" y="113.5" width="42" height="29.1" fill="#6f5fa8"/>
+<rect x="248.0" y="82.0" width="42" height="31.5" fill="#7f6d4f"/>
+<text x="269.0" y="434" text-anchor="middle" font-size="12">30m UV</text>
+<rect x="323.0" y="364.8" width="42" height="47.2" fill="#4f7f60"/>
+<rect x="323.0" y="259.1" width="42" height="105.7" fill="#b8792e"/>
+<rect x="323.0" y="180.0" width="42" height="79.1" fill="#2f6f9f"/>
+<rect x="323.0" y="119.1" width="42" height="60.9" fill="#b83a4b"/>
+<rect x="323.0" y="105.9" width="42" height="13.2" fill="#6f5fa8"/>
+<rect x="323.0" y="82.0" width="42" height="23.9" fill="#7f6d4f"/>
+<text x="344.0" y="434" text-anchor="middle" font-size="12">60m UV</text>
+<rect x="80" y="440" width="12" height="12" fill="#4f7f60"/>
+<text x="100" y="450" font-size="12">SKIL-201 (protein_coding)</text>
+<rect x="80" y="464" width="12" height="12" fill="#b8792e"/>
+<text x="100" y="474" font-size="12">SKIL-205 (processed_transcript)</text>
+<rect x="80" y="488" width="12" height="12" fill="#2f6f9f"/>
+<text x="100" y="498" font-size="12">SKIL-204 (protein_coding)</text>
+<rect x="80" y="512" width="12" height="12" fill="#b83a4b"/>
+<text x="100" y="522" font-size="12">SKIL-203 (protein_coding)</text>
+<rect x="80" y="536" width="12" height="12" fill="#6f5fa8"/>
+<text x="100" y="546" font-size="12">SKIL-202 (protein_coding)</text>
+<rect x="80" y="560" width="12" height="12" fill="#7f6d4f"/>
+<text x="100" y="570" font-size="12">Other expressed isoforms (mixed)</text>
+<line x1="500" y1="302.0" x2="880" y2="302.0" class="grid"/>
+<text x="492" y="306.0" text-anchor="end" font-size="11">0.0</text>
+<line x1="500" y1="192.0" x2="880" y2="192.0" class="grid"/>
+<text x="492" y="196.0" text-anchor="end" font-size="11">3.1</text>
+<line x1="500" y1="82.0" x2="880" y2="82.0" class="grid"/>
+<text x="492" y="86.0" text-anchor="end" font-size="11">6.2</text>
+<line x1="500" y1="82" x2="500" y2="302" class="axis"/>
+<line x1="500" y1="302" x2="880" y2="302" class="axis"/>
+<polyline points="500.0,82.0 626.7,172.7 753.3,84.9 880.0,100.9" fill="none" stroke="#222222" stroke-width="2"/>
+<circle cx="500.0" cy="82.0" r="4" fill="#222222"/>
+<text x="500.0" y="72.0" text-anchor="middle" font-size="11">6.2</text>
+<text x="500.0" y="324" text-anchor="middle" font-size="12">control</text>
+<circle cx="626.7" cy="172.7" r="4" fill="#222222"/>
+<text x="626.7" y="162.7" text-anchor="middle" font-size="11">3.7</text>
+<text x="626.7" y="324" text-anchor="middle" font-size="12">12m UV</text>
+<circle cx="753.3" cy="84.9" r="4" fill="#222222"/>
+<text x="753.3" y="74.9" text-anchor="middle" font-size="11">6.1</text>
+<text x="753.3" y="324" text-anchor="middle" font-size="12">30m UV</text>
+<circle cx="880.0" cy="100.9" r="4" fill="#222222"/>
+<text x="880.0" y="90.9" text-anchor="middle" font-size="11">5.7</text>
+<text x="880.0" y="324" text-anchor="middle" font-size="12">60m UV</text>
+<text x="500" y="350" font-size="13">Mean TPM by isoform</text>
+<text x="500" y="374" font-size="11">isoform</text>
+<text x="690" y="374" font-size="11">control</text>
+<text x="752" y="374" font-size="11">12m UV</text>
+<text x="814" y="374" font-size="11">30m UV</text>
+<text x="876" y="374" font-size="11">60m UV</text>
+<text x="500" y="396" font-size="11">SKIL-201</text>
+<text x="690" y="396" font-size="11">4.45</text>
+<text x="752" y="396" font-size="11">1.65</text>
+<text x="814" y="396" font-size="11">1.46</text>
+<text x="876" y="396" font-size="11">0.81</text>
+<text x="500" y="418" font-size="11">SKIL-205</text>
+<text x="690" y="418" font-size="11">0.56</text>
+<text x="752" y="418" font-size="11">0.94</text>
+<text x="814" y="418" font-size="11">2.00</text>
+<text x="876" y="418" font-size="11">1.82</text>
+<text x="500" y="440" font-size="11">SKIL-204</text>
+<text x="690" y="440" font-size="11">0.16</text>
+<text x="752" y="440" font-size="11">0.11</text>
+<text x="814" y="440" font-size="11">0.72</text>
+<text x="876" y="440" font-size="11">1.36</text>
+<text x="500" y="462" font-size="11">SKIL-203</text>
+<text x="690" y="462" font-size="11">0.36</text>
+<text x="752" y="462" font-size="11">0.52</text>
+<text x="814" y="462" font-size="11">0.83</text>
+<text x="876" y="462" font-size="11">1.05</text>
+<text x="500" y="484" font-size="11">SKIL-202</text>
+<text x="690" y="484" font-size="11">0.24</text>
+<text x="752" y="484" font-size="11">0.20</text>
+<text x="814" y="484" font-size="11">0.54</text>
+<text x="876" y="484" font-size="11">0.23</text>
+<text x="500" y="506" font-size="11">Other expressed isoforms</text>
+<text x="690" y="506" font-size="11">0.45</text>
+<text x="752" y="506" font-size="11">0.25</text>
+<text x="814" y="506" font-size="11">0.59</text>
+<text x="876" y="506" font-size="11">0.41</text>
+</svg>

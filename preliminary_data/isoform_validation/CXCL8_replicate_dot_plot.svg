@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="557" viewBox="0 0 980 557" role="img" aria-labelledby="title desc">
+<title id="title">CXCL8 replicate-level isoform TPM</title>
+<desc id="desc">Dots show replicate TPM values; line connects condition means on log2 TPM scale.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>
+text { font-family: Arial, Helvetica, sans-serif; fill: #222; }
+.axis { stroke: #555; stroke-width: 1; }
+.grid { stroke: #dddddd; stroke-width: 1; }
+.mean { stroke: #222222; stroke-width: 1.8; fill: none; }
+.dot { fill: #2f6f9f; opacity: 0.78; }
+</style>
+<text x="490" y="30" text-anchor="middle" font-size="20" font-weight="700">CXCL8 replicate-level isoform TPM</text>
+<text x="490" y="54" text-anchor="middle" font-size="12">y-axis is log2(TPM + 0.1); dots are individual replicates, line is condition mean</text>
+<text x="18" y="102" font-size="12">CXCL8-201 | protein_coding</text>
+<text x="18" y="122" font-size="11">ENST00000307407.8</text>
+<line x1="220" y1="177.0" x2="900" y2="177.0" class="grid"/>
+<line x1="220" y1="129.5" x2="900" y2="129.5" class="grid"/>
+<line x1="220" y1="82.0" x2="900" y2="82.0" class="grid"/>
+<line x1="220" y1="177" x2="900" y2="177" class="axis"/>
+<line x1="220" y1="82" x2="220" y2="177" class="axis"/>
+<circle cx="210.0" cy="177.0" r="4" class="dot"/>
+<circle cx="220.0" cy="177.0" r="4" class="dot"/>
+<circle cx="230.0" cy="177.0" r="4" class="dot"/>
+<text x="220.0" y="197" text-anchor="middle" font-size="11">control</text>
+<text x="220.0" y="169.0" text-anchor="middle" font-size="10">0.00</text>
+<circle cx="436.7" cy="177.0" r="4" class="dot"/>
+<circle cx="446.7" cy="177.0" r="4" class="dot"/>
+<circle cx="456.7" cy="177.0" r="4" class="dot"/>
+<text x="446.66666666666663" y="197" text-anchor="middle" font-size="11">12m</text>
+<text x="446.66666666666663" y="169.0" text-anchor="middle" font-size="10">0.00</text>
+<circle cx="663.3" cy="165.8" r="4" class="dot"/>
+<circle cx="673.3" cy="146.4" r="4" class="dot"/>
+<circle cx="683.3" cy="145.4" r="4" class="dot"/>
+<text x="673.3333333333333" y="197" text-anchor="middle" font-size="11">30m</text>
+<text x="673.3333333333333" y="143.3" text-anchor="middle" font-size="10">0.13</text>
+<circle cx="890.0" cy="94.3" r="4" class="dot"/>
+<circle cx="900.0" cy="82.0" r="4" class="dot"/>
+<circle cx="910.0" cy="86.0" r="4" class="dot"/>
+<text x="900.0" y="197" text-anchor="middle" font-size="11">60m</text>
+<text x="900.0" y="79.0" text-anchor="middle" font-size="10">1.64</text>
+<polyline points="220.0,177.0 446.7,177.0 673.3,151.3 900.0,87.0" class="mean"/>
+<text x="18" y="247" font-size="12">CXCL8-203 | retained_intron</text>
+<text x="18" y="267" font-size="11">ENST00000483500.1</text>
+<line x1="220" y1="322.0" x2="900" y2="322.0" class="grid"/>
+<line x1="220" y1="274.5" x2="900" y2="274.5" class="grid"/>
+<line x1="220" y1="227.0" x2="900" y2="227.0" class="grid"/>
+<line x1="220" y1="322" x2="900" y2="322" class="axis"/>
+<line x1="220" y1="227" x2="220" y2="322" class="axis"/>
+<circle cx="210.0" cy="322.0" r="4" class="dot"/>
+<circle cx="220.0" cy="273.7" r="4" class="dot"/>
+<circle cx="230.0" cy="322.0" r="4" class="dot"/>
+<text x="220.0" y="342" text-anchor="middle" font-size="11">control</text>
+<text x="220.0" y="291.4" text-anchor="middle" font-size="10">0.07</text>
+<circle cx="436.7" cy="322.0" r="4" class="dot"/>
+<circle cx="446.7" cy="322.0" r="4" class="dot"/>
+<circle cx="456.7" cy="322.0" r="4" class="dot"/>
+<text x="446.66666666666663" y="342" text-anchor="middle" font-size="11">12m</text>
+<text x="446.66666666666663" y="314.0" text-anchor="middle" font-size="10">0.00</text>
+<circle cx="663.3" cy="322.0" r="4" class="dot"/>
+<circle cx="673.3" cy="322.0" r="4" class="dot"/>
+<circle cx="683.3" cy="322.0" r="4" class="dot"/>
+<text x="673.3333333333333" y="342" text-anchor="middle" font-size="11">30m</text>
+<text x="673.3333333333333" y="314.0" text-anchor="middle" font-size="10">0.00</text>
+<circle cx="890.0" cy="227.0" r="4" class="dot"/>
+<circle cx="900.0" cy="292.5" r="4" class="dot"/>
+<circle cx="910.0" cy="322.0" r="4" class="dot"/>
+<text x="900.0" y="342" text-anchor="middle" font-size="11">60m</text>
+<text x="900.0" y="254.0" text-anchor="middle" font-size="10">0.30</text>
+<polyline points="220.0,299.4 446.7,322.0 673.3,322.0 900.0,262.0" class="mean"/>
+<text x="18" y="392" font-size="12">CXCL8-202 | protein_coding</text>
+<text x="18" y="412" font-size="11">ENST00000401931.1</text>
+<line x1="220" y1="467.0" x2="900" y2="467.0" class="grid"/>
+<line x1="220" y1="419.5" x2="900" y2="419.5" class="grid"/>
+<line x1="220" y1="372.0" x2="900" y2="372.0" class="grid"/>
+<line x1="220" y1="467" x2="900" y2="467" class="axis"/>
+<line x1="220" y1="372" x2="220" y2="467" class="axis"/>
+<circle cx="210.0" cy="467.0" r="4" class="dot"/>
+<circle cx="220.0" cy="467.0" r="4" class="dot"/>
+<circle cx="230.0" cy="467.0" r="4" class="dot"/>
+<text x="220.0" y="487" text-anchor="middle" font-size="11">control</text>
+<text x="220.0" y="459.0" text-anchor="middle" font-size="10">0.00</text>
+<circle cx="436.7" cy="467.0" r="4" class="dot"/>
+<circle cx="446.7" cy="467.0" r="4" class="dot"/>
+<circle cx="456.7" cy="467.0" r="4" class="dot"/>
+<text x="446.66666666666663" y="487" text-anchor="middle" font-size="11">12m</text>
+<text x="446.66666666666663" y="459.0" text-anchor="middle" font-size="10">0.00</text>
+<circle cx="663.3" cy="467.0" r="4" class="dot"/>
+<circle cx="673.3" cy="467.0" r="4" class="dot"/>
+<circle cx="683.3" cy="467.0" r="4" class="dot"/>
+<text x="673.3333333333333" y="487" text-anchor="middle" font-size="11">30m</text>
+<text x="673.3333333333333" y="459.0" text-anchor="middle" font-size="10">0.00</text>
+<circle cx="890.0" cy="467.0" r="4" class="dot"/>
+<circle cx="900.0" cy="398.5" r="4" class="dot"/>
+<circle cx="910.0" cy="372.0" r="4" class="dot"/>
+<text x="900.0" y="487" text-anchor="middle" font-size="11">60m</text>
+<text x="900.0" y="394.2" text-anchor="middle" font-size="10">0.16</text>
+<polyline points="220.0,467.0 446.7,467.0 673.3,467.0 900.0,402.2" class="mean"/>
+</svg>

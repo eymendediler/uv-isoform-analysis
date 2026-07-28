@@ -1,0 +1,4 @@
+time_min,suppa2_candidates,permutation_candidates,overlap,jaccard,direction_agreement
+12,2739,1694,1429,0.475699067909454,1.0
+30,2734,1705,1426,0.4732824427480916,1.0
+60,3387,2252,1923,0.517491926803014,1.0

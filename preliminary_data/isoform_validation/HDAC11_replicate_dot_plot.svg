@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="702" viewBox="0 0 980 702" role="img" aria-labelledby="title desc">
+<title id="title">HDAC11 replicate-level isoform TPM</title>
+<desc id="desc">Dots show replicate TPM values; line connects condition means on log2 TPM scale.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>
+text { font-family: Arial, Helvetica, sans-serif; fill: #222; }
+.axis { stroke: #555; stroke-width: 1; }
+.grid { stroke: #dddddd; stroke-width: 1; }
+.mean { stroke: #222222; stroke-width: 1.8; fill: none; }
+.dot { fill: #2f6f9f; opacity: 0.78; }
+</style>
+<text x="490" y="30" text-anchor="middle" font-size="20" font-weight="700">HDAC11 replicate-level isoform TPM</text>
+<text x="490" y="54" text-anchor="middle" font-size="12">y-axis is log2(TPM + 0.1); dots are individual replicates, line is condition mean</text>
+<text x="18" y="102" font-size="12">HDAC11-201 | protein_coding</text>
+<text x="18" y="122" font-size="11">ENST00000295757.8</text>
+<line x1="220" y1="177.0" x2="900" y2="177.0" class="grid"/>
+<line x1="220" y1="129.5" x2="900" y2="129.5" class="grid"/>
+<line x1="220" y1="82.0" x2="900" y2="82.0" class="grid"/>
+<line x1="220" y1="177" x2="900" y2="177" class="axis"/>
+<line x1="220" y1="82" x2="220" y2="177" class="axis"/>
+<circle cx="210.0" cy="88.0" r="4" class="dot"/>
+<circle cx="220.0" cy="82.0" r="4" class="dot"/>
+<circle cx="230.0" cy="87.1" r="4" class="dot"/>
+<text x="220.0" y="197" text-anchor="middle" font-size="11">control</text>
+<text x="220.0" y="77.6" text-anchor="middle" font-size="10">2.68</text>
+<circle cx="436.7" cy="92.4" r="4" class="dot"/>
+<circle cx="446.7" cy="94.4" r="4" class="dot"/>
+<circle cx="456.7" cy="99.3" r="4" class="dot"/>
+<text x="446.66666666666663" y="197" text-anchor="middle" font-size="11">12m</text>
+<text x="446.66666666666663" y="87.2" text-anchor="middle" font-size="10">1.86</text>
+<circle cx="663.3" cy="177.0" r="4" class="dot"/>
+<circle cx="673.3" cy="177.0" r="4" class="dot"/>
+<circle cx="683.3" cy="177.0" r="4" class="dot"/>
+<text x="673.3333333333333" y="197" text-anchor="middle" font-size="11">30m</text>
+<text x="673.3333333333333" y="169.0" text-anchor="middle" font-size="10">0.00</text>
+<circle cx="890.0" cy="92.6" r="4" class="dot"/>
+<circle cx="900.0" cy="87.1" r="4" class="dot"/>
+<circle cx="910.0" cy="90.3" r="4" class="dot"/>
+<text x="900.0" y="197" text-anchor="middle" font-size="11">60m</text>
+<text x="900.0" y="81.9" text-anchor="middle" font-size="10">2.27</text>
+<polyline points="220.0,85.6 446.7,95.2 673.3,177.0 900.0,89.9" class="mean"/>
+<text x="18" y="247" font-size="12">HDAC11-213 | protein_coding</text>
+<text x="18" y="267" font-size="11">ENST00000437379.2</text>
+<line x1="220" y1="322.0" x2="900" y2="322.0" class="grid"/>
+<line x1="220" y1="274.5" x2="900" y2="274.5" class="grid"/>
+<line x1="220" y1="227.0" x2="900" y2="227.0" class="grid"/>
+<line x1="220" y1="322" x2="900" y2="322" class="axis"/>
+<line x1="220" y1="227" x2="220" y2="322" class="axis"/>
+<circle cx="210.0" cy="322.0" r="4" class="dot"/>
+<circle cx="220.0" cy="322.0" r="4" class="dot"/>
+<circle cx="230.0" cy="322.0" r="4" class="dot"/>
+<text x="220.0" y="342" text-anchor="middle" font-size="11">control</text>
+<text x="220.0" y="314.0" text-anchor="middle" font-size="10">0.00</text>
+<circle cx="436.7" cy="322.0" r="4" class="dot"/>
+<circle cx="446.7" cy="322.0" r="4" class="dot"/>
+<circle cx="456.7" cy="322.0" r="4" class="dot"/>
+<text x="446.66666666666663" y="342" text-anchor="middle" font-size="11">12m</text>
+<text x="446.66666666666663" y="314.0" text-anchor="middle" font-size="10">0.00</text>
+<circle cx="663.3" cy="239.3" r="4" class="dot"/>
+<circle cx="673.3" cy="232.9" r="4" class="dot"/>
+<circle cx="683.3" cy="227.0" r="4" class="dot"/>
+<text x="673.3333333333333" y="342" text-anchor="middle" font-size="11">30m</text>
+<text x="673.3333333333333" y="224.6" text-anchor="middle" font-size="10">2.00</text>
+<circle cx="890.0" cy="322.0" r="4" class="dot"/>
+<circle cx="900.0" cy="322.0" r="4" class="dot"/>
+<circle cx="910.0" cy="322.0" r="4" class="dot"/>
+<text x="900.0" y="342" text-anchor="middle" font-size="11">60m</text>
+<text x="900.0" y="314.0" text-anchor="middle" font-size="10">0.00</text>
+<polyline points="220.0,322.0 446.7,322.0 673.3,232.6 900.0,322.0" class="mean"/>
+<text x="18" y="392" font-size="12">HDAC11-203 | protein_coding</text>
+<text x="18" y="412" font-size="11">ENST00000402271.5</text>
+<line x1="220" y1="467.0" x2="900" y2="467.0" class="grid"/>
+<line x1="220" y1="419.5" x2="900" y2="419.5" class="grid"/>
+<line x1="220" y1="372.0" x2="900" y2="372.0" class="grid"/>
+<line x1="220" y1="467" x2="900" y2="467" class="axis"/>
+<line x1="220" y1="372" x2="220" y2="467" class="axis"/>
+<circle cx="210.0" cy="401.9" r="4" class="dot"/>
+<circle cx="220.0" cy="373.7" r="4" class="dot"/>
+<circle cx="230.0" cy="415.9" r="4" class="dot"/>
+<text x="220.0" y="487" text-anchor="middle" font-size="11">control</text>
+<text x="220.0" y="385.3" text-anchor="middle" font-size="10">0.50</text>
+<circle cx="436.7" cy="408.5" r="4" class="dot"/>
+<circle cx="446.7" cy="427.0" r="4" class="dot"/>
+<circle cx="456.7" cy="402.1" r="4" class="dot"/>
+<text x="446.66666666666663" y="487" text-anchor="middle" font-size="11">12m</text>
+<text x="446.66666666666663" y="403.2" text-anchor="middle" font-size="10">0.29</text>
+<circle cx="663.3" cy="372.0" r="4" class="dot"/>
+<circle cx="673.3" cy="425.7" r="4" class="dot"/>
+<circle cx="683.3" cy="381.7" r="4" class="dot"/>
+<text x="673.3333333333333" y="487" text-anchor="middle" font-size="11">30m</text>
+<text x="673.3333333333333" y="379.4" text-anchor="middle" font-size="10">0.60</text>
+<circle cx="890.0" cy="442.9" r="4" class="dot"/>
+<circle cx="900.0" cy="403.1" r="4" class="dot"/>
+<circle cx="910.0" cy="392.2" r="4" class="dot"/>
+<text x="900.0" y="487" text-anchor="middle" font-size="11">60m</text>
+<text x="900.0" y="399.6" text-anchor="middle" font-size="10">0.33</text>
+<polyline points="220.0,393.3 446.7,411.2 673.3,387.4 900.0,407.6" class="mean"/>
+<text x="18" y="537" font-size="12">HDAC11-205 | protein_coding</text>
+<text x="18" y="557" font-size="11">ENST00000404548.5</text>
+<line x1="220" y1="612.0" x2="900" y2="612.0" class="grid"/>
+<line x1="220" y1="564.5" x2="900" y2="564.5" class="grid"/>
+<line x1="220" y1="517.0" x2="900" y2="517.0" class="grid"/>
+<line x1="220" y1="612" x2="900" y2="612" class="axis"/>
+<line x1="220" y1="517" x2="220" y2="612" class="axis"/>
+<circle cx="210.0" cy="612.0" r="4" class="dot"/>
+<circle cx="220.0" cy="612.0" r="4" class="dot"/>
+<circle cx="230.0" cy="545.6" r="4" class="dot"/>
+<text x="220.0" y="632" text-anchor="middle" font-size="11">control</text>
+<text x="220.0" y="568.2" text-anchor="middle" font-size="10">0.15</text>
+<circle cx="436.7" cy="612.0" r="4" class="dot"/>
+<circle cx="446.7" cy="612.0" r="4" class="dot"/>
+<circle cx="456.7" cy="612.0" r="4" class="dot"/>
+<text x="446.66666666666663" y="632" text-anchor="middle" font-size="11">12m</text>
+<text x="446.66666666666663" y="604.0" text-anchor="middle" font-size="10">0.00</text>
+<circle cx="663.3" cy="612.0" r="4" class="dot"/>
+<circle cx="673.3" cy="517.0" r="4" class="dot"/>
+<circle cx="683.3" cy="612.0" r="4" class="dot"/>
+<text x="673.3333333333333" y="632" text-anchor="middle" font-size="11">30m</text>
+<text x="673.3333333333333" y="545.3" text-anchor="middle" font-size="10">0.36</text>
+<circle cx="890.0" cy="612.0" r="4" class="dot"/>
+<circle cx="900.0" cy="612.0" r="4" class="dot"/>
+<circle cx="910.0" cy="612.0" r="4" class="dot"/>
+<text x="900.0" y="632" text-anchor="middle" font-size="11">60m</text>
+<text x="900.0" y="604.0" text-anchor="middle" font-size="10">0.00</text>
+<polyline points="220.0,576.2 446.7,612.0 673.3,553.3 900.0,612.0" class="mean"/>
+</svg>

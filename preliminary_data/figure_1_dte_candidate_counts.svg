@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>
+text { font-family: Arial, Helvetica, sans-serif; fill: #222; }
+.axis { stroke: #555; stroke-width: 1; }
+.grid { stroke: #dddddd; stroke-width: 1; }
+.up { fill: #b83a4b; }
+.down { fill: #2f6f9f; }
+.usageup { fill: #b8792e; }
+.usagedown { fill: #4f7f60; }
+</style>
+<text x="380.0" y="28" text-anchor="middle" font-size="18" font-weight="700">Protein-coding DTE isoform candidates</text>
+<line x1="82" y1="358" x2="730" y2="358" class="axis"/>
+<line x1="82" y1="62" x2="82" y2="358" class="axis"/>
+<line x1="82" y1="358.0" x2="730" y2="358.0" class="grid"/>
+<text x="72" y="362.0" text-anchor="end" font-size="12">0</text>
+<line x1="82" y1="298.8" x2="730" y2="298.8" class="grid"/>
+<text x="72" y="302.8" text-anchor="end" font-size="12">250</text>
+<line x1="82" y1="239.6" x2="730" y2="239.6" class="grid"/>
+<text x="72" y="243.6" text-anchor="end" font-size="12">500</text>
+<line x1="82" y1="180.4" x2="730" y2="180.4" class="grid"/>
+<text x="72" y="184.4" text-anchor="end" font-size="12">750</text>
+<line x1="82" y1="121.2" x2="730" y2="121.2" class="grid"/>
+<text x="72" y="125.2" text-anchor="end" font-size="12">1000</text>
+<line x1="82" y1="62.0" x2="730" y2="62.0" class="grid"/>
+<text x="72" y="66.0" text-anchor="end" font-size="12">1250</text>
+<text x="190.0" y="402" text-anchor="middle" font-size="13">12 min</text>
+<rect x="128.0" y="94.4" width="54" height="263.6" class="down"/>
+<text x="155.0" y="86.4" text-anchor="middle" font-size="12">1113</text>
+<text x="155.0" y="382" text-anchor="middle" font-size="11">down</text>
+<rect x="198.0" y="342.8" width="54" height="15.2" class="up"/>
+<text x="225.0" y="334.8" text-anchor="middle" font-size="12">64</text>
+<text x="225.0" y="382" text-anchor="middle" font-size="11">up</text>
+<text x="406.0" y="402" text-anchor="middle" font-size="13">30 min</text>
+<rect x="344.0" y="222.1" width="54" height="135.9" class="down"/>
+<text x="371.0" y="214.1" text-anchor="middle" font-size="12">574</text>
+<text x="371.0" y="382" text-anchor="middle" font-size="11">down</text>
+<rect x="414.0" y="334.8" width="54" height="23.2" class="up"/>
+<text x="441.0" y="326.8" text-anchor="middle" font-size="12">98</text>
+<text x="441.0" y="382" text-anchor="middle" font-size="11">up</text>
+<text x="622.0" y="402" text-anchor="middle" font-size="13">60 min</text>
+<rect x="560.0" y="149.9" width="54" height="208.1" class="down"/>
+<text x="587.0" y="141.9" text-anchor="middle" font-size="12">879</text>
+<text x="587.0" y="382" text-anchor="middle" font-size="11">down</text>
+<rect x="630.0" y="301.9" width="54" height="56.1" class="up"/>
+<text x="657.0" y="293.9" text-anchor="middle" font-size="12">237</text>
+<text x="657.0" y="382" text-anchor="middle" font-size="11">up</text>
+<text x="24" y="210.0" transform="rotate(-90 24 210.0)" text-anchor="middle" font-size="13">candidate count</text>
+</svg>

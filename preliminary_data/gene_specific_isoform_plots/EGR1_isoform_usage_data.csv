@@ -1,0 +1,2 @@
+gene_name,transcript_id,transcript_name,transcript_type,protein_id,max_mean_TPM,mean_TPM_0,mean_TPM_12,mean_TPM_30,mean_TPM_60,usage_0,usage_12,usage_30,usage_60
+EGR1,ENST00000239938.5,EGR1-201,protein_coding,ENSP00000239938.4,265.60185099999995,0.45756233333333335,2.136905666666667,90.95676033333332,265.60185099999995,1.0,1.0,1.0,1.0

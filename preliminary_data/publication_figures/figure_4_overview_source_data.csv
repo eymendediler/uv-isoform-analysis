@@ -1,0 +1,13 @@
+analysis,time_min,direction,count
+DTE,12,down,1113
+DTE,12,up,64
+DTE,30,down,574
+DTE,30,up,98
+DTE,60,down,879
+DTE,60,up,237
+DTU,12,down,554
+DTU,12,up,542
+DTU,30,down,518
+DTU,30,up,562
+DTU,60,down,632
+DTU,60,up,746

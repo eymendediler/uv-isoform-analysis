@@ -1,0 +1,2 @@
+gene_name,gene_id,transcript_id,transcript_name,transcript_type,protein_id,cds_bp,cds_segments,protein_length_aa_est,max_mean_TPM,mean_TPM_0,mean_TPM_12,mean_TPM_30,mean_TPM_60
+EGR1,ENSG00000120738.8,ENST00000239938.5,EGR1-201,protein_coding,ENSP00000239938.4,1629.0,2.0,543.0,265.60185099999995,0.45756233333333335,2.136905666666667,90.95676033333332,265.60185099999995
