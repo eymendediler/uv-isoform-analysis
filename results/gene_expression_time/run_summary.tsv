@@ -1,0 +1,2 @@
+tested_nonzero_genes	genes_with_padj	genes_padj_le_0_05	model
+31360	20407	5603	DESeq2 LRT: full ~ time; reduced ~ 1

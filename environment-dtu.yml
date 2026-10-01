@@ -1,0 +1,17 @@
+name: uv-isoform-dtu
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-base=4.4
+  - bioconductor-drimseq
+  - bioconductor-stager
+  - bioconductor-tximport
+  - bioconductor-deseq2
+  - bioconductor-edger
+  - r-data.table
+  - r-ggplot2
+  - r-readr
+  - r-dplyr
+  - r-tidyr
+  - r-optparse

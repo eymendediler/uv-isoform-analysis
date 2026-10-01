@@ -1,0 +1,4 @@
+filter	min_samps_gene_expr	min_gene_expr	min_samps_feature_expr	min_feature_expr	min_samps_feature_prop	min_feature_prop	original_genes	retained_genes	gene_retention_fraction	original_transcripts	retained_transcripts	transcript_retention_fraction	genes_with_multiple_retained_transcripts
+loose	3	10	2	5	2	0.01	60656	12544	0.206805592192034	229580	60465	0.263372244969074	12544
+medium	3	20	3	10	3	0.05	60656	9678	0.159555526246373	229580	31047	0.135233905392456	9678
+strict	3	50	3	20	3	0.1	60656	7630	0.125791347929306	229580	20639	0.0898989459012109	7630

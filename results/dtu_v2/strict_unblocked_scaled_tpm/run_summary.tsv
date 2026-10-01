@@ -1,0 +1,2 @@
+filter	model	input_scale	alpha	retained_genes	retained_transcripts	drimseq_gene_fdr_0_05	drimseq_tx_fdr_0_05
+strict	unblocked	scaled_tpm	0.05	8449	25159	622	920

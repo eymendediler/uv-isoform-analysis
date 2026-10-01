@@ -1,6 +1,7 @@
 # Raw/public input data
 GSE268349_RAW.tar
 gencode.v35.annotation.gtf.gz
+gencode.v35.pc_translations.fa.gz
 geo_rnaseq_quant/
 supplementary_data_1_8.xlsx
 
@@ -22,7 +23,30 @@ __pycache__/
 
 # Locally installed third-party tools and SUPPA2 intermediate matrices
 .tools/
+.envs/
 results/suppa2_work/
+
+# Regenerable binary model objects (version/platform dependent)
+results/dtu_v2/**/drimseq_fit.rds
+
+# Superseded DTU v2 intermediates retained locally, not promoted on GitHub
+results/dtu_v2/biological_evidence_scaled_tpm/
+results/dtu_v2/candidate_timecourses_scaled_tpm/
+results/dtu_v2/loose_unblocked/
+results/dtu_v2/medium_unblocked/
+results/dtu_v2/strict_unblocked/
+results/dtu_v2/medium_linear_time/
+results/dtu_v2/*_unblocked_scaled_tpm/stageR_adjusted.tsv
+results/dtu_v2/robust_protein_isoform_gene_summary.tsv
+results/dtu_v2/robust_protein_isoform_gene_summary_scaled_tpm.tsv
+results/dtu_v2/robust_protein_sequence_details.tsv.gz
+results/dtu_v2/robust_protein_sequence_details_scaled_tpm.tsv.gz
+results/dtu_v2/robust_protein_sequence_gene_summary.tsv
+results/dtu_v2/robust_protein_sequence_gene_summary_scaled_tpm.tsv
+results/dtu_v2/robust_stageR_transcripts_all_filters.tsv.gz
+results/dtu_v2/robust_stageR_transcripts_all_filters_scaled_tpm.tsv.gz
+results/dtu_v2/sensitivity_summary.tsv
+results/dtu_v2/sensitivity_summary_scaled_tpm.tsv
 
 # macOS metadata
 .DS_Store

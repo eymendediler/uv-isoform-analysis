@@ -1,0 +1,13 @@
+sample_id	(Intercept)	time12	time30	time60
+control_rep1	1	0	0	0
+uv_12min_rep1	1	1	0	0
+uv_30min_rep1	1	0	1	0
+uv_60min_rep1	1	0	0	1
+control_rep2	1	0	0	0
+uv_12min_rep2	1	1	0	0
+uv_30min_rep2	1	0	1	0
+uv_60min_rep2	1	0	0	1
+control_rep3	1	0	0	0
+uv_12min_rep3	1	1	0	0
+uv_30min_rep3	1	0	1	0
+uv_60min_rep3	1	0	0	1

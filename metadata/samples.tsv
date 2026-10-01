@@ -1,0 +1,13 @@
+sample_id	geo_accession	time_min	replicate	condition	quant_file
+control_rep1	GSM8289927	0	1	control	geo_rnaseq_quant/GSM8289927_rna_0_1_quant.sf.gz
+uv_12min_rep1	GSM8289928	12	1	uv_12min	geo_rnaseq_quant/GSM8289928_rna_12_1_quant.sf.gz
+uv_30min_rep1	GSM8289929	30	1	uv_30min	geo_rnaseq_quant/GSM8289929_rna_30_1_quant.sf.gz
+uv_60min_rep1	GSM8289930	60	1	uv_60min	geo_rnaseq_quant/GSM8289930_rna_60_1_quant.sf.gz
+control_rep2	GSM8289931	0	2	control	geo_rnaseq_quant/GSM8289931_rna_0_2_quant.sf.gz
+uv_12min_rep2	GSM8289932	12	2	uv_12min	geo_rnaseq_quant/GSM8289932_rna_12_2_quant.sf.gz
+uv_30min_rep2	GSM8289933	30	2	uv_30min	geo_rnaseq_quant/GSM8289933_rna_30_2_quant.sf.gz
+uv_60min_rep2	GSM8289934	60	2	uv_60min	geo_rnaseq_quant/GSM8289934_rna_60_2_quant.sf.gz
+control_rep3	GSM8289935	0	3	control	geo_rnaseq_quant/GSM8289935_rna_0_3_quant.sf.gz
+uv_12min_rep3	GSM8289936	12	3	uv_12min	geo_rnaseq_quant/GSM8289936_rna_12_3_quant.sf.gz
+uv_30min_rep3	GSM8289937	30	3	uv_30min	geo_rnaseq_quant/GSM8289937_rna_30_3_quant.sf.gz
+uv_60min_rep3	GSM8289938	60	3	uv_60min	geo_rnaseq_quant/GSM8289938_rna_60_3_quant.sf.gz

@@ -1,0 +1,4 @@
+filter	tested_genes	tested_transcripts	stageR_confirmed_genes	stageR_confirmed_transcripts	stageR_confirmed_protein_coding_transcripts
+loose	12630	74359	204	278	159
+medium	10480	39202	297	429	261
+strict	8449	25159	289	434	264

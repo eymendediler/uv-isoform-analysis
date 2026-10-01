@@ -1,105 +1,116 @@
-# UV-associated transcript isoform analysis
+# UV time-course transcript isoform analysis
 
-This repository contains a preliminary isoform-level reanalysis of the RNA-seq
-data from Kaya and Adebali (2025), *UV-induced reorganization of 3D genome
-mediates DNA damage response*.
+This repository contains a reanalysis of the HeLa-S3 RNA-seq time course from
+Kaya and Adebali (2025), *UV-induced reorganization of 3D genome mediates DNA
+damage response* (GEO: `GSE268349`). The biological question is whether UV
+exposure is followed by time-dependent changes in within-gene transcript usage,
+particularly changes between transcripts capable of encoding different protein
+sequences.
 
-The published study reports gene-level RNA-seq results. Here I used the Salmon
-quantifications deposited under GEO accession `GSE268349` to examine transcript
-expression and isoform usage after UV treatment.
+## Analysis status
 
-## Data
+**Use the `dtu_v2` analysis for current biological interpretation.** Earlier
+permutation and SUPPA2 outputs are retained for provenance and method
+development, but are superseded and must not be presented as the primary result.
 
-- control, 12, 30 and 60 min samples (three replicates per condition)
-- Salmon `quant.sf.gz` files from `GSE268349`
-- GENCODE v35 transcript annotation
+- [Current methods](docs/current_analysis_methods.md)
+- [Current analysis status and accepted result counts](results/dtu_v2/analysis_status.md)
+- [Current figures and source data](results/dtu_v2/primary_candidate_timepoint_statistics/README.md)
+- [Figure and statistical interpretation guide](docs/figure_and_statistics_guide.md)
+- [Candidate-by-candidate biological interpretation](docs/biological_interpretation.md)
+- [Questions to confirm with the original laboratory](docs/questions_for_supervisor.md)
+- [Superseded/legacy analysis notice](LEGACY_ANALYSES.md)
 
-Raw data and the GENCODE GTF are not included in the repository.
+## Experimental data
 
-## Analysis
+The analysis retains all 12 samples:
 
-I looked at three related questions:
+| Recovery after UV | Samples |
+|---|---:|
+| 0 min / non-UV control | 3 |
+| 12 min | 3 |
+| 30 min | 3 |
+| 60 min | 3 |
 
-- Differential transcript expression (DTE): whether the abundance of an
-  individual transcript changes after UV.
-- Differential transcript usage (DTU): whether a transcript's share of the
-  total expression of its gene changes.
-- SUPPA2 analysis: an independent DTU analysis together with local splicing
-  events (SE, A3/A5, MX, RI and AF/AL).
+Inputs are the deposited Salmon transcript quantifications and GENCODE v35
+annotation. The current model treats samples as independent because the public
+metadata do not establish that replicate labels form matched experimental
+blocks across time. A blocked sensitivity analysis should be attempted only if
+the original laboratory confirms that relationship.
 
-The initial DTE/DTU analysis uses an exact label-permutation test for each
-control-versus-UV comparison. SUPPA2 uses replicate-level PSI values and its
-empirical significance procedure.
+## Why an omnibus time model?
 
-## Main results
+The temporal form of an isoform response is not known in advance. Biologically
+plausible patterns include:
 
-Protein-coding candidates from the permutation analysis:
+- a transient response at 12 minutes;
+- a response beginning at 30 minutes and persisting at 60 minutes;
+- a monotonic increase or decrease; and
+- an early increase followed by recovery.
 
-| Time | DTE down | DTE up | DTU down | DTU up |
-|---|---:|---:|---:|---:|
-| 12 min | 1,113 | 64 | 554 | 542 |
-| 30 min | 574 | 98 | 518 | 562 |
-| 60 min | 879 | 237 | 632 | 746 |
+The primary categorical-time omnibus test therefore asks whether any of the
+four time points differ without imposing a linear or monotonic trajectory.
+Secondary `12 vs 0`, `30 vs 0`, and `60 vs 0` contrasts localize the supported
+time points.
 
-SUPPA2 identified 2,739, 2,734 and 3,387 transcript-DTU candidates at 12, 30
-and 60 min, respectively. The overlap between SUPPA2 and the permutation DTU
-analysis was 1,429, 1,426 and 1,923 transcripts. The direction of the usage
-change agreed in all overlapping cases.
+## Current statistical workflow
 
-There were 2,124 SUPPA2 candidates present at two or more time points. The
-local-event analysis returned 8,190 candidate event/time-point combinations,
-with alternative first exon and skipped exon events as the largest groups.
-
-These numbers are useful for candidate selection, but they should not be read
-as a final list of significant isoform switches. There are only three
-replicates per condition. Among the SUPPA2 candidates, 23, 23 and 46
-transcript/time-point rows passed BH correction at 12, 30 and 60 min,
-respectively. These require cautious interpretation because SUPPA2's empirical
-procedure returned a raw p-value of zero for the strongest events.
-
-## Repository structure
-
-- `scripts/`: analysis and plotting scripts
-- `results/`: DTE, DTU and SUPPA2 result tables
-- `preliminary_data/`: summary tables and candidate plots
-- `docs/`: notes on the analysis and interpretation
-- `reproducibility_checks/`: rerun and content checks
-
-The main SUPPA2 notes are in
-[`docs/suppa2_isoform_analysis.md`](docs/suppa2_isoform_analysis.md).
-The complete sample and result audit is in
-[`reproducibility_checks/full_analysis_audit.md`](reproducibility_checks/full_analysis_audit.md).
-Run-by-run SUPPA2 checksums are in
-[`reproducibility_checks/suppa2_repeat_checksums.csv`](reproducibility_checks/suppa2_repeat_checksums.csv).
-Publication-style overview and candidate-gene figures are in
-[`preliminary_data/publication_figures/`](preliminary_data/publication_figures/).
-
-## Reproduction
-
-The local input files should be placed in `geo_rnaseq_quant/`, with
-`gencode.v35.annotation.gtf.gz` in the repository root.
-
-```bash
-python -m pip install -r requirements.txt
-python scripts/analyze_transcript_isoforms.py
-python scripts/statistical_isoform_analysis.py
-python scripts/create_preliminary_isoform_report.py
-python scripts/create_gene_specific_isoform_plots.py
-python scripts/create_isoform_validation_outputs.py
-python scripts/create_publication_figures.py
+```text
+12 Salmon quantifications
+  -> tximport length-scaled count-like values (countsFromAbundance="scaledTPM")
+  -> DRIMSeq information filtering
+  -> DRIMSeq Dirichlet-multinomial model: full ~ time, null ~ 1
+  -> omnibus likelihood-ratio test
+  -> condition-blind transcript proportion-SD filter
+  -> stageR gene screening and transcript confirmation (target OFDR = 0.05)
+  -> robustness intersection across loose, medium and strict filters
+  -> GENCODE protein-sequence comparison
+  -> secondary time-vs-0 DRIMSeq contrasts
+  -> global Benjamini-Hochberg correction across all transcript x time tests
 ```
 
-For the SUPPA2 analysis:
+The current corrected primary analysis contains 187 stageR-confirmed
+transcripts shared by all three information-filter settings; 111 are
+protein-coding. Twelve genes contain at least two robust coding transcripts
+with distinct GENCODE amino-acid sequences. These are RNA-level candidates,
+not proof of translated protein switching.
+
+## Primary candidate figures
+
+Replicate-aware plots and source tables are available for:
+
+`RUNX1`, `ERN1`, `FER`, `EPC1`, `SFT2D2`, `E2F3`, `ELK4`, `PDK3`, `MECP2`,
+`NUFIP2`, `FGF2`, and `IER3`.
+
+In all plots, individual points are the biological samples. Connected means are
+descriptive visual guides only; the statistical model is fitted to individual
+sample counts and does not replace replicates with means.
+
+## Reproducing the current analysis
+
+The versioned environment is described in `environment-dtu.yml`. Input paths
+and checksums are documented under `metadata/`.
 
 ```bash
-git clone --depth 1 https://github.com/comprna/SUPPA.git .tools/SUPPA
-python scripts/run_suppa2_analysis.py
-python scripts/compare_isoform_methods.py
+conda env create --prefix .envs/dtu -f environment-dtu.yml
+conda run --prefix .envs/dtu Rscript scripts/run_drimseq_omnibus.R \
+  --filter loose --model unblocked --input-scale scaled_tpm
+conda run --prefix .envs/dtu Rscript scripts/run_drimseq_omnibus.R \
+  --filter medium --model unblocked --input-scale scaled_tpm
+conda run --prefix .envs/dtu Rscript scripts/run_drimseq_omnibus.R \
+  --filter strict --model unblocked --input-scale scaled_tpm
+conda run --prefix .envs/dtu Rscript scripts/apply_drimseq_proportion_sd_filter.R
+python scripts/summarize_dtu_sensitivity.py
+python scripts/validate_protein_sequences.py
+conda run --prefix .envs/dtu Rscript scripts/run_drimseq_timepoint_contrasts.R
+python scripts/plot_primary_dtu_statistics.py
 ```
 
-The dataset contains three biological replicates per condition. Separately,
-both the preliminary DTE/DTU pipeline and the later SUPPA2 workflow were
-executed in three independent computational reruns. These reruns test
-reproducibility; they do not add biological replicates. Candidate tables,
-summary counts, cross-method tables and ORF/CDS summaries were identical by
-SHA-256 checksum.
+See [scripts/README.md](scripts/README.md) for the role and status of every
+current and superseded script.
+
+## Reference study
+
+Kaya VO, Adebali O. UV-induced reorganization of 3D genome mediates DNA damage
+response. *Nature Communications* 16, 1376 (2025).
+https://www.nature.com/articles/s41467-024-55724-7
