@@ -2,6 +2,8 @@
 
 ## Current primary workflow
 
+- `run_current_analysis.sh`: executes the complete accepted workflow in the
+  documented order and stops if any step fails.
 - `audit_salmon_inputs.py`: validates sample files, transcript IDs and library
   summaries.
 - `export_gencode_annotation.py`: exports the transcript-to-gene annotation.

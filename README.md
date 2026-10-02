@@ -14,6 +14,7 @@ permutation and SUPPA2 outputs are retained for provenance and method
 development, but are superseded and must not be presented as the primary result.
 
 - [Current methods](docs/current_analysis_methods.md)
+- [Exact reproducibility commands](docs/reproducibility_commands.md)
 - [Current analysis status and accepted result counts](results/dtu_v2/analysis_status.md)
 - [Current figures and source data](results/dtu_v2/primary_candidate_timepoint_statistics/README.md)
 - [Figure and statistical interpretation guide](docs/figure_and_statistics_guide.md)
@@ -106,8 +107,15 @@ conda run --prefix .envs/dtu Rscript scripts/run_drimseq_timepoint_contrasts.R
 python scripts/plot_primary_dtu_statistics.py
 ```
 
-See [scripts/README.md](scripts/README.md) for the role and status of every
-current and superseded script.
+Alternatively, run the complete accepted sequence with:
+
+```bash
+bash scripts/run_current_analysis.sh .envs/dtu
+```
+
+See [the exact command record](docs/reproducibility_commands.md) and
+[scripts/README.md](scripts/README.md) for the role and status of every current
+and superseded script.
 
 ## Reference study
 
