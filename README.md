@@ -13,6 +13,20 @@ sequences.
 permutation and SUPPA2 outputs are retained for provenance and method
 development, but are superseded and must not be presented as the primary result.
 
+## Start here: current figures
+
+The figure below and the linked gene panels are the current, presentation-ready
+results. Files located directly under the older `preliminary_data/` and
+top-level `results/` locations are retained only as legacy outputs.
+
+![Primary time-localized DTU candidates](results/dtu_v2/primary_candidate_timepoint_statistics/primary_candidate_timepoint_heatmap.png)
+
+- [RUNX1 replicate-aware DTU figure](results/dtu_v2/primary_candidate_timepoint_statistics/RUNX1_dtu_statistics.png)
+- [E2F3 replicate-aware DTU figure](results/dtu_v2/primary_candidate_timepoint_statistics/E2F3_dtu_statistics.png)
+- [FER replicate-aware DTU figure](results/dtu_v2/primary_candidate_timepoint_statistics/FER_dtu_statistics.png)
+- [EPC1 replicate-aware DTU figure](results/dtu_v2/primary_candidate_timepoint_statistics/EPC1_dtu_statistics.png)
+- [All 12 current candidate figures and source tables](results/dtu_v2/primary_candidate_timepoint_statistics/)
+
 - [Current methods](docs/current_analysis_methods.md)
 - [Exact reproducibility commands](docs/reproducibility_commands.md)
 - [Current analysis status and accepted result counts](results/dtu_v2/analysis_status.md)
