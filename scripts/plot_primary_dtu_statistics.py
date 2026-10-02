@@ -2,6 +2,7 @@
 """Create replicate-aware figures for primary protein-changing DTU candidates."""
 
 from pathlib import Path
+import textwrap
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -12,6 +13,69 @@ PROJECT = Path(__file__).resolve().parents[1]
 RESULTS = PROJECT / "results" / "dtu_v2"
 OUT = RESULTS / "primary_candidate_timepoint_statistics"
 TIMES = (0, 12, 30, 60)
+
+PRESENTATION_CAPTIONS = {
+    "RUNX1": (
+        "Input: 12 Salmon samples; analysis: categorical-time DRIMSeq + stageR. "
+        "RUNX1-202/RUNX1b usage decreases and RUNX1-203/RUNX1a increases; "
+        "60 vs 0 passes global BH correction (q=0.0073). RNA-level evidence only."
+    ),
+    "E2F3": (
+        "Input: 12 Salmon samples; analysis: categorical-time DRIMSeq + stageR. "
+        "E2F3-201 increases and E2F3-202 decreases; 30 and 60 min pass global BH "
+        "correction. Total gene abundance and within-gene usage are distinct outcomes."
+    ),
+    "FER": (
+        "Input: 12 Salmon samples; analysis: categorical-time DRIMSeq + stageR. "
+        "Full-length FER-201 usage decreases at 12, 30 and 60 min; shorter transcripts "
+        "increase at selected times. Short-product function requires validation."
+    ),
+    "EPC1": (
+        "Input: 12 Salmon samples; analysis: categorical-time DRIMSeq + stageR. "
+        "EPC1-202 decreases and EPC1-205 increases at 30 and 60 min. The predicted "
+        "57-aa EPC1-205 product requires junction, full-length and protein validation."
+    ),
+    "ERN1": (
+        "Input: 12 Salmon samples; analysis: categorical-time DRIMSeq + stageR. "
+        "ERN1-201 decreases and ERN1-208 increases at 60 min (global BH q=0.037). "
+        "The predicted 70-aa product is not established as a functional protein."
+    ),
+    "MECP2": (
+        "Input: 12 Salmon samples; analysis: categorical-time DRIMSeq + stageR. "
+        "MECP2-201 decreases and MECP2-216 increases at 12 and 30 min. The short "
+        "annotation should not be equated automatically with canonical MECP2 isoforms."
+    ),
+    "PDK3": (
+        "Input: 12 Salmon samples; analysis: categorical-time DRIMSeq + stageR. "
+        "PDK3-201 increases and PDK3-203 decreases at 12 and 30 min. This is an "
+        "RNA-level metabolic-stress candidate, not an established UV-DDR mechanism."
+    ),
+    "NUFIP2": (
+        "Input: 12 Salmon samples; analysis: categorical-time DRIMSeq + stageR. "
+        "NUFIP2-201 decreases and NUFIP2-202 increases at 60 min (global BH q=0.0344). "
+        "Direct UV-response and protein-product evidence is limited."
+    ),
+    "ELK4": (
+        "Input: 12 Salmon samples; analysis: categorical-time DRIMSeq + stageR. "
+        "The omnibus time test supports DTU, but no individual time contrast passes "
+        "global BH q<=0.05 (minimum q approximately 0.0512)."
+    ),
+    "SFT2D2": (
+        "Input: 12 Salmon samples; analysis: categorical-time DRIMSeq + stageR. "
+        "The omnibus time test supports DTU, but no individual time contrast passes "
+        "global BH q<=0.05 (minimum q approximately 0.0577)."
+    ),
+    "FGF2": (
+        "Input: 12 Salmon samples; analysis: categorical-time DRIMSeq + stageR. "
+        "The omnibus time test supports DTU; the largest 12-min shift narrowly misses "
+        "global BH significance (q approximately 0.0508)."
+    ),
+    "IER3": (
+        "Interpretation warning: genuine Salmon-derived values are shown, but transcript "
+        "proportion SD is approximately 0.055, below the 0.10 safeguard. Time-specific "
+        "p-values were set to 1; do not present IER3 as a primary robust candidate."
+    ),
+}
 
 
 def q_label(value: float) -> str:
@@ -106,7 +170,7 @@ def main() -> None:
         gene_robust = robust.loc[robust.gene_name == gene_name].copy()
         gene_contrasts = contrasts.loc[contrasts.gene_name == gene_name]
         fig, axes = plt.subplots(
-            1, 2, figsize=(13, 5.4), gridspec_kw={"width_ratios": [0.8, 1.6]}
+            1, 2, figsize=(13, 6.35), gridspec_kw={"width_ratios": [0.8, 1.6]}
         )
 
         # Gene abundance: the three points are the biological replicates.
@@ -189,7 +253,17 @@ def main() -> None:
             fontsize=8,
         )
         fig.suptitle(f"{gene_name}: replicate-aware DTU evidence", fontsize=14)
-        fig.tight_layout(rect=[0, 0.05, 1, 0.95])
+        caption = textwrap.fill(PRESENTATION_CAPTIONS[gene_name], width=150)
+        fig.text(
+            0.5,
+            0.018,
+            caption,
+            ha="center",
+            va="bottom",
+            fontsize=8.2,
+            color="#222222",
+        )
+        fig.tight_layout(rect=[0, 0.15, 1, 0.95])
         fig.savefig(OUT / f"{gene_name}_dtu_statistics.png", dpi=220)
         plt.close(fig)
 
@@ -228,7 +302,22 @@ def main() -> None:
         "Cell value = mean usage change\n"
         "* global Benjamini–Hochberg q≤0.05 across all transcript × time tests"
     )
-    fig.tight_layout()
+    fig.text(
+        0.5,
+        0.008,
+        textwrap.fill(
+            "Input: within-gene TPM usage from 12 Salmon samples and global-BH "
+            "adjusted DRIMSeq time contrasts. Red indicates increased usage, blue "
+            "decreased usage, and a star marks q<=0.05. RNA-level evidence does not "
+            "establish protein isoform production.",
+            width=125,
+        ),
+        ha="center",
+        va="bottom",
+        fontsize=7.5,
+        color="#222222",
+    )
+    fig.tight_layout(rect=[0, 0.055, 1, 1])
     fig.savefig(OUT / "primary_candidate_timepoint_heatmap.png", dpi=240)
     fig.savefig(OUT / "primary_candidate_timepoint_heatmap.pdf")
     plt.close(fig)
