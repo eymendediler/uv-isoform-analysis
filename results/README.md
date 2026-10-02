@@ -1,6 +1,6 @@
 # Results index
 
-## Current presentation-ready figures
+## Current figures
 
 Open
 [`dtu_v2/primary_candidate_timepoint_statistics/`](dtu_v2/primary_candidate_timepoint_statistics/)
